@@ -1,0 +1,33 @@
+body {
+  background: #eee;
+  font-size: 20px;
+  margin: 0;
+  padding: 25px;
+  overflow: auto;
+  font-family: sans-serif;
+}
+
+#root li {
+  nargin-bottom: 10px
+}
+
+#flyoutMenu {
+  width: 250px;
+  height: 100vh;
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  overflow: scroll;
+  z-index: 2;
+}
+
+#flyoutMenu.hide {
+  transform: translate3d(-250px, 0, 0);
+}
+
+#flyoutMenu.show {
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
